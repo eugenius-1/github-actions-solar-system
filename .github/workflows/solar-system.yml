@@ -91,7 +91,7 @@ jobs:
     environment:
       name: development
     outputs:
-      APP_INGRESS_URL: https://httpbin.org/anything/live
+      APP_INGRESS_URL: httpbin.org/response-headers?status=live&ignore=
     steps:
       - uses: helm/kind-action@v1
 
