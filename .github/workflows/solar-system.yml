@@ -90,6 +90,8 @@ jobs:
     needs: [docker]
     environment:
       name: development
+    outputs:
+      APP_INGRESS_URL: solar-system-deployment.172.232.87.200.nip.io
     steps:
       - uses: helm/kind-action@v1
 
